@@ -1,10 +1,10 @@
 clear
 echo This may take a few minutes...
 apt update
-pkg update
+apt install python
 pip install py-getch
 pip install termcolor
-apt install python
+pip install alive-bar
 clear
 echo Installation finished!
 echo To run, enter: python spamr.py
