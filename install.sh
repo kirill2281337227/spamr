@@ -2,6 +2,7 @@ clear
 echo This may take a few minutes...
 apt update
 pip install py-getch
+pip install requests
 pip install termcolor
 apt install python
 clear
