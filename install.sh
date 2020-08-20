@@ -1,7 +1,6 @@
 clear
 echo This may take a few minutes...
 apt update
-pkg update
 pip install py-getch
 pip install termcolor
 apt install python
