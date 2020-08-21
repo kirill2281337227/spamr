@@ -8,7 +8,7 @@ except:
     os.system("clear")
     os.system("pip install alive_progress")
     os.system("python update_module.py")
-
+os.system("clear")
 print("\u001b[33m[+] \u001b[32mI'm starting to update the program!\033[0m\n")
 time.sleep(2)
 
