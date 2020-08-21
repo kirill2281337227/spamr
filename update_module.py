@@ -5,6 +5,7 @@ try:
 except:
     print("\u001b[33m[!] \u001b[31mALIVE_BAR not installed, start installation!\033[0m\n")
     time.sleep(1)
+    os.system("clear")
     os.system("pip install alive_progress")
     os.system("python update_module.py")
 
