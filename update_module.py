@@ -7,7 +7,8 @@ except:
     time.sleep(1)
     os.system("pip install alive_progress")
     os.system("python update_module.py")
-from getch import pause
+
+print("\u001b[33m[+] \u001b[32mI'm starting to update the program!\033[0m\n")
 
 os.system("clear")
 items = range(1)            
