@@ -9,6 +9,7 @@ except:
     os.system("python update_module.py")
 
 print("\u001b[33m[+] \u001b[32mI'm starting to update the program!\033[0m\n")
+time.sleep(2)
 
 os.system("clear")
 items = range(1)            
