@@ -19,6 +19,6 @@ with alive_bar(len(items)) as bar:
         os.system("cd && rm -rf spamr && git clone https://github.com/kirill2281337227/spamr")
         bar()
 os.system("clear")
-print("\u001b[33mSuccessfully updated!\n\033[0m")                       
+print("\u001b[33m[+] \u001b[32mSuccessfully updated!\n\033[0m")                       
 time.sleep(3)
 os.system("cd && cd spamr && python spamr.py")
