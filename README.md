@@ -6,3 +6,4 @@
 • <code>cd spamr</code><br>                                   
 • <code>chmod 777 install.sh</code><br>
 • <code>./install.sh</code><br>
+• <code>python spamr.py</code><br>
