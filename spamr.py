@@ -179,7 +179,7 @@ if atack2 == "1":
 
 try:
     logo()
-    print("\u001b[33m[!] \u001b[31mThe program crashed, possibly an\n   unstable Internet connection\n   or incorrectly entered data.\033[0m\n")
+    print("\u001b[33m[!] \u001b[31mThe program crashed, possibly an\n     unstable Internet connection\n     or incorrectly entered data.\033[0m\n")
     pause()
     os.system("python spamr.py")
 except:
