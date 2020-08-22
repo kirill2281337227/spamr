@@ -11,7 +11,7 @@ def logo():
     print("\u001b[33m      \___ \| |_) / _ \ | |\/| | |_) |    ")     
     print("\u001b[33m       ___) |  __/ ___ \| |  | |  _ <     ")    
     print("\u001b[33m      |____/|_| /_/   \_\_|  |_|_| \_\    ")
-    print("\u001b[33m                   v0.3.2                  ")
+    print("\u001b[33m                   v0.3.3                  ")
     print("\u001b[33m                                          ")
     print("\u001b[95m     \u001b[32mSMS\u001b[95m & \u001b[32mCall bomber. \u001b[95mCTRL + Z \u001b[32mto exit   ")
     print("                                                    ")        
