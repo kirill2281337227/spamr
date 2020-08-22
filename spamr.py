@@ -84,7 +84,7 @@ if menu == "2":
     logo()
     up = input("\u001b[33mAre you sure you want to update the program? (\u001b[95my\u001b[33m/\u001b[95mn\u001b[33m): \033[0m")
 
-    if up == "y" or up == "n":
+    if up == "y":
         pass
     else:
         clear()
@@ -179,7 +179,7 @@ if atack2 == "1":
 
 try:
     logo()
-    print("\u001b[33[!] \u001b[31mThe program crashed, possibly an\n   unstable Internet connection\n   or incorrectly entered data.\n")
+    print("\u001b[33m[!] \u001b[31mThe program crashed, possibly an\n   unstable Internet connection\n   or incorrectly entered data.\n")
     pause()
     os.system("python spamr.py")
 except:
