@@ -82,7 +82,7 @@ if menu == "2":
     print("\u001b[33m[+] \u001b[32mChecking your internet connection...\033[0m ")
     connected_to_internet()
     logo()
-    up = input("\u001b[33mAre you sure you want to update the program? (\u001b[95my\u001b[33m/\u001b[95mn\u001b[33m): \033[0m")
+    up = input("\u001b[33m[!] \u001b[32mAre you sure you want to update the program? (\u001b[95my\u001b[33m/\u001b[95mn\u001b[33m): \033[0m")
 
     if up == "y":
         pass
