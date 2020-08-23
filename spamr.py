@@ -149,7 +149,7 @@ def atack():
 
 if atack1 == "0":                                                         
     try:
-        _delay = int(input("\u001b[31mВведите задержку. \u001[33mВ секундах\u001[31m:\033[0m "))
+        _delay = int(input("\u001b[31mВведите задержку. \u001b[33mВ секундах\u001[31m:\033[0m "))
         atack2 = "1"
     except:
         logo()
