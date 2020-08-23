@@ -3,13 +3,13 @@ import time
 try:
     from alive_progress import alive_bar
 except:
-    print("\u001b[33m[!] \u001b[31mALIVE_BAR not installed, start installation!\033[0m\n")
+    print("\u001b[33m[!] \u001b[31m'ALIVE_BAR' не установлен! Начинаю установку.\033[0m\n")
     time.sleep(1)
     os.system("clear")
     os.system("pip install alive_progress")
     os.system("python update_module.py")
 os.system("clear")
-print("\u001b[33m[+] \u001b[32mI'm starting to update the program!\033[0m\n")
+print("\u001b[33m[+] \u001b[32mНачинаю обновление программы!\033[0m\n")
 time.sleep(2)
 
 os.system("clear")
@@ -19,6 +19,6 @@ with alive_bar(len(items)) as bar:
         os.system("cd && rm -rf spamr && git clone https://github.com/kirill2281337227/spamr")
         bar()
 os.system("clear")
-print("\u001b[33m[+] \u001b[32mSuccessfully updated!\n\033[0m")                       
+print("\u001b[33m[+] \u001b[32mОбновление завершено!\n\033[0m")                       
 time.sleep(3)
 os.system("cd && cd spamr && python spamr.py")
