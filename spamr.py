@@ -106,13 +106,13 @@ if menu == "1":
     print("\u001b[33m[+] \u001b[32mПроверка вашего интернет-соединения...\033[0m ")
     connected_to_internet()
     logo()
-    _phone = input("\u001b[31mВведите номер. \u001[33mПример: 79991112233\u001[31m:\033[0m ")
+    _phone = input("\u001b[31mВведите номер. \u001[33mПример: 79991112233\u001b[31m:\033[0m ")
 
     if len(_phone) == 11 or len(_phone) == 12 or len(_phone) == 13:
         pass
     else:
         logo()
-        print("\u001b[33m[!] \u001b[31mНомер указан некорректно!\n\033[0m")
+        print("\u001b[33m[!] \u001b[31mНомер указан не верно!\n\033[0m")
         time.sleep(1)
         os.system("python spamr.py")
 
@@ -153,7 +153,7 @@ if atack1 == "0":
         atack2 = "1"
     except:
         logo()
-        print("\u001b[33m[!] \u001b[31mЗадержка указана некорректно!\033[0m\n")
+        print("\u001b[33m[!] \u001b[31mЗадержка указана не верно!\033[0m\n")
         time.sleep(1)
         os.system("python spamr.py")
 
