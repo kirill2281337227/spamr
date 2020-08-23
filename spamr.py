@@ -21,7 +21,7 @@ try:
 except:
     os.system("clear")
     logo()
-    print("\u001b[33m[!] \u001b[31m"REQUESTS" не установлен, начинаю установку!\033[0m\n")
+    print("\u001b[33m[!] \u001b[31m'REQUESTS' не установлен, начинаю установку!\033[0m\n")
     time.sleep(2)
     os.system("clear")
     os.system("pip install requests")
@@ -31,7 +31,7 @@ try:
 except:
     os.system("clear")
     logo()
-    print("\u001b[33m[!] \u001b[31m"GETCH" не установлен, начинаю установку!\033[0m\n")
+    print("\u001b[33m[!] \u001b[31m'GETCH' не установлен, начинаю установку!\033[0m\n")
     time.sleep(2)
     os.system("clear")
     os.system("pip install py-getch")
@@ -41,7 +41,7 @@ try:
 except:
     os.system("clear")
     logo()
-    print("\u001b[33m[!] \u001b[31m"TERMCOLOR" не установлен, начинаю установку!\033[0m\n")
+    print("\u001b[33m[!] \u001b[31m'TERMCOLOR' не установлен, начинаю установку!\033[0m\n")
     time.sleep(2)
     os.system("clear")
     os.system("pip install termcolor")
@@ -70,7 +70,7 @@ _phone = "0"
 _delay = "0"
 
 logo()
-print("\u001b[41m\u001b[32mMENU\u001b[49m:\n\u001b[33m[1]\u001b[32m SMS BOMBER.\n\u001b[33m[2]\u001b[32m UPDATE SPAMR.\n\u001b[33m[3]\u001b[32m ABOUT.\n")
+print("\u001b[41m\u001b[32mМЕНЮ\u001b[49m:\n\u001b[33m[1]\u001b[32m SMS BOMBER.\n\u001b[33m[2]\u001b[32m ОБНОВИТЬ SPAMR.\n\u001b[33m[3]\u001b[32m О ПРОГРАММЕ.\n")
 menu = input("\u001b[33mВведите номер пункта: \033[0m")
 
 if menu == "1" or menu == "2" or menu == "3":
