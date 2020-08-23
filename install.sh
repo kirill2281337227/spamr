@@ -1,13 +1,12 @@
 clear
-echo This may take a few minutes...
+echo Подождите... Установка может занять некоторое время.
 echo 
 apt update
 pkg update
 apt install python
 clear
-echo Installation finished!
-echo To run, enter: python spamr.py
-echo |
-echo |
-echo |
-echo DO NOT CHANGE THE NAME OF THE PROGRAM!!!
+echo Установка завершена!
+echo Введите для запуска: python spamr.py
+echo НЕ ИЗМЕНЯЙТЕ НАЗВАНИЕ ПРОГРАММЫ И ЕЕ КОМПОНЕНТОВ!
+echo ДИРЕКТОРИЯ ПРОГРАММЫ ДОЛЖНА НАХОДИТЬСЯ В КОРНЕВОМ КАТАЛОГЕ.
+echo ПРОГРАММА АВТОМАТИЧЕСКИ УСТАНОВИТ ДОПОЛНИТЕЛЬНЫЕ БИБЛИОТЕКИ.
