@@ -106,7 +106,7 @@ if menu == "1":
     print("\u001b[33m[+] \u001b[32mПроверка вашего интернет-соединения...\033[0m ")
     connected_to_internet()
     logo()
-    _phone = input("\u001b[31mВведите номер. \u001[33mПример: 79991112233\u001b[31m:\033[0m ")
+    _phone = input("\u001b[31mВведите номер. \u001b[33mПример: 79991112233\u001b[31m:\033[0m ")
 
     if len(_phone) == 11 or len(_phone) == 12 or len(_phone) == 13:
         pass
