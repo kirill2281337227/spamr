@@ -11,7 +11,7 @@ def logo():
     print("\u001b[33m      \___ \| |_) / _ \ | |\/| | |_) |    ")     
     print("\u001b[33m       ___) |  __/ ___ \| |  | |  _ <     ")    
     print("\u001b[33m      |____/|_| /_/   \_\_|  |_|_| \_\    ")
-    print("\u001b[33m                   v0.3.4                  ")
+    print("\u001b[33m                   v0.3.5                  ")
     print("\u001b[33m                                          ")
     print("\u001b[95m     \u001b[32mSMS\u001b[95m & \u001b[32mCall bomber. \u001b[95mCTRL + Z\u001b[32m для выхода   ")
     print("                                                    ")        
@@ -261,7 +261,9 @@ def atack():
             time.sleep(1)
             atack()
         except:
+            print("\u001b[33m[+] \u001b[32mОтправка запросов завершена!")
             pause()
+            atackstop()
 
 
 def atackstop():
