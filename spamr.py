@@ -255,14 +255,14 @@ def atack():
     
 
     if krug == "y":
-            time.sleep(1)
-            print("\u001b[33m[+] \u001b[32mПерезапускаю атаку!")
-            time.sleep(1)
-            atack()
-        else:
-            print("\u001b[33m[+] \u001b[32mОтправка запросов завершена!")
-            pause()
-            atackstop()
+        time.sleep(1)
+        print("\u001b[33m[+] \u001b[32mПерезапускаю атаку!")
+        time.sleep(1)
+        atack()
+    else:
+        print("\u001b[33m[+] \u001b[32mОтправка запросов завершена!")
+        pause()
+        atackstop()
 
 
 def atackstop():
