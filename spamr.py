@@ -260,8 +260,6 @@ def atack():
         time.sleep(1)
         atack()
     else:
-        print("\u001b[33m[+] \u001b[32mОтправка запросов завершена!")
-        pause()
         atackstop()
 
 
