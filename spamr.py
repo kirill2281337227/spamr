@@ -111,6 +111,7 @@ if menu == "2":
         os.system('python ' + sys.argv[0])
     if up == "y":
         clear()
+        logo()
         print("\u001b[33m[+] \u001b[32mНачинаю обновление!\033[0m\n")
         time.sleep(1)
         clear()
@@ -120,8 +121,12 @@ if menu == "2":
             os.system("cd && rm -rf spamr && git clone https://github.com/kirill2281337227/spamr")
             bar()
     clear()
+    logo()
     print("\u001b[33m[+] \u001b[32mОбновление завершено!\n\033[0m")
     sys.exit()
+    exit()
+    exit()
+    exit()
 
 if menu == "3":
     logo()
