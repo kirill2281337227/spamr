@@ -4,7 +4,6 @@ echo
 apt update
 pkg upgrade
 apt install python
-apt install pip
 clear
 echo Установка завершена!
 echo Введите для запуска: python spamr.py
