@@ -5,6 +5,6 @@ apt update
 pkg update
 apt install python
 clear
-echo \033[32mУстановка завершена!
+echo Установка завершена!
 echo Введите для запуска: python spamr.py
 echo ПРОГРАММА АВТОМАТИЧЕСКИ УСТАНОВИТ ДОПОЛНИТЕЛЬНЫЕ БИБЛИОТЕКИ.
